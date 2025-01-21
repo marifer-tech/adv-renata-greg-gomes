@@ -1,0 +1,194 @@
+:root {
+    --navy-blue: #1f3b5a;
+    --beige: #f5f2e9;
+    --text-color: #333;
+    --button-bg: white;
+    --button-shadow: rgba(0, 0, 0, 0.1);
+}
+
+
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    background-color: var(--beige);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.header {
+    color: white;
+}
+
+header img {
+    width: 1263px;
+}
+
+@media (max-width: 768px) {
+    header img {
+        width: 100%;        
+    }
+}
+
+h1 {
+    margin: 0.5em 0;
+    font-size: 1.8em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin: 60px;
+    padding: 5px;
+}
+
+.menu-item {
+    background-color: var(--button-bg);
+    border-radius: 50px;
+    box-shadow: 0 4px 6px var(--button-shadow);
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2em;
+    padding: 0.8em 1.5em;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu-item:hover {
+    background-color: var(--navy-blue);
+    color: white;
+    transform: scale(1.05);
+}
+
+.icons {
+    display: flex; /* Ativa o layout flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 10px; /* Espaçamento entre os ícones */
+}
+
+.icons img {
+    width: 40px;
+    margin: 0; /* Remove margens adicionais */
+}
+
+
+.section {
+    padding: 2em 1em;
+}
+
+/* Container geral dos cards */
+.section-cards {
+    position: relative;
+    padding: 2em 1em;
+    text-align: center;
+    background-color: var(--beige);
+    margin-bottom: 2em;
+}
+
+.section-cards::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Ajuste a largura da linha */
+    height: 1px;
+    background-color: var(--navy-blue); /* Cor da linha */
+    opacity: 0.5; /* Transparência para suavidade */
+}
+
+h2 {
+    font-size: 1.8em;
+    color: var(--navy-blue);
+    margin-bottom: 1em;
+}
+
+/* Container dos cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+/* Estilo dos cards */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+    color: var(--navy-blue);
+}
+
+.card p,
+.card ul {
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.card ul {
+    padding-left: 1.2em;
+}
+
+.card ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Links */
+.card a {
+    color: var(--navy-blue);
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Distância do botão em relação à parte inferior */
+    right: 10px; /* Distância do botão em relação à lateral direita */
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-button img {
+    width: 60px; /* Ajuste o tamanho do ícone */
+    height: 60px;
+}
+
+/* Efeito ao passar o mouse */
+.whatsapp-button:hover {
+    transform: scale(1.1); /* Aumenta levemente o botão */
+}
+
+footer {
+    background-color: #344152 ;
+    color: #fff;
+    padding: 20px;
+}
+
+footer img {
+    width: 60px;
+}
