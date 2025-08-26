@@ -232,14 +232,17 @@ a {
     flex: 1;
 }
 
-.about-image {
+.card-image {
     flex: 1;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: var(--shadow);
 }
 
-.about-image img {
+.card-image h2 {
+    text-align: center;
+}
+
+.card-image img {
     width: 100%;
     height: auto;
     display: block;
