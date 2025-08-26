@@ -91,8 +91,8 @@ a {
 }
 
 .profile-image-container {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid var(--secondary-color);
@@ -349,7 +349,7 @@ a {
 .experience-card {
     background-color: var(--white);
     border-radius: 10px;
-    padding: 30px;
+    padding: 40px;
     box-shadow: var(--shadow);
     transition: var(--transition);
 }
@@ -361,8 +361,8 @@ a {
 
 .experience-header {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    flex-direction: column; /* força empilhar */
+    align-items: flex-start; /* alinha à esquerda */
 }
 
 .experience-header i {
@@ -373,9 +373,11 @@ a {
 
 .experience-header h3 {
     margin-bottom: 5px;
+    margin-right: 15px; /* espaçamento horizontal */
 }
 
 .experience-period {
+    margin-top: 5px; /* espaço abaixo do título */
     font-size: 0.9rem;
     color: var(--text-light);
 }
